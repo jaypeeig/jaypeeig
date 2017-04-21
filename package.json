@@ -1,27 +1,18 @@
 {
   "name": "jaypeeig",
   "version": "1.0.0",
-  "description": "portfolio website",
-  "main": "server.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
-  "author": "Jaypee Ignacio",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jpogi/jaypeeig.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "bugs": {
-    "url": "https://github.com/jpogi/jaypeeig/issues"
-  },
-  "homepage": "https://github.com/jpogi/jaypeeig#readme"
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "mongojs": "^2.4.0"
+  }
 }

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+	background: #f0f0f0;
+	font-family: "Ubuntu", sans-serif;
+}
+
+.divider {
+    display: block;
+    margin: 5px auto;
+    width: 50%;
+    height: 1px;
+    border-top: rgba(0,0,0,0.1) 1px solid;
+    border-bottom: rgba(255,255,255,0.2) 1px solid;
+}
+
+/* - - - - - - - - - - GLOBAL STUFF ABOVE - - - - - - - - - - - */
+
+p#preloader {
+	text-align: center;
+	margin-top: 69px;
+}
+
+.header {
+	color: #fff;
+	width: 100%;
+    min-height: 450px;
+    margin: 0 auto 30px;
+    padding: 10px 0;
+    background: url(../img/woelfel.jpg) bottom center no-repeat fixed;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.27) 0px 2px 4px;
+    border-bottom: 8px solid #b4b3b3;
+}
+.header h1 {
+	margin: 7% 0 20px;
+    letter-spacing: 2px;
+    font-size: 2.7em;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+span.tagline {
+	font-style: italic;
+	font-size: 10px;
+}
+p.ign {
+	color: #f0f0f0;
+	text-shadow: rgb(0, 0, 0) 0px 1px 5px;
+}
+
+/*-----------------------------------------------------------------*/\
+
+.ibadge {
+	display: block;
+    position: relative;
+    height: 100px;
+    padding: 0;
+    border-radius: 100%;
+    border: #3a4450 4px solid;
+    box-shadow: rgba(0,0,0,0.3) 0px 0px 4px;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.ibadge img {
+    display: block;
+    margin: auto;
+    border: 0;
+    overflow: hidden;
+    max-width: 150px;
+    margin: -110px auto 30px;
+}

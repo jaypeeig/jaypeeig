@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Konichiwa!</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/50a246a60d.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <p id="preloader">Loading AppComponent content here ...</p>
+
+    <div id="contents" style="visibility:hidden">
+      <div class="header">
+
+        <h1>Gourmet Circuit Labs</h1>
+        <h2>code <i class="fa fa-code" aria-hidden="true"></i> &nbsp;&bull;&nbsp;
+         <i class="fa fa-camera-retro" aria-hidden="true"></i> travel
+        </h2>
+        <hr class="divider">
+        <p class="ign">@jaypeeig</p>
+      </div>
+
+      <div class="ibadge">
+        <a href="#" rel="nofollow">
+          <img src="img/gravatar.png" alt="jaypee">
+        </a>
+      </div>
+    </div>
+
+  </body>
+
+  <script>
+
+    window.onload = function() {
+      $('#preloader').hide().siblings('#contents').css('visibility', 'visible');
+    };
+
+  </script>
+
+</html>
