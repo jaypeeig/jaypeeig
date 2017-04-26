@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Konichiwa!</title>
+    <title>Gourmet Blog</title>
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,20 +19,91 @@
 
     <div id="contents" style="visibility:hidden">
       <div class="header">
-
-        <h1>Gourmet Circuit Labs</h1>
+        <h1>Gourmet <br class="hd-lg"> Codelabs</h1>
         <h2>code <i class="fa fa-code" aria-hidden="true"></i> &nbsp;&bull;&nbsp;
-         <i class="fa fa-camera-retro" aria-hidden="true"></i> travel
+          travel <i class="fa fa-camera-retro" aria-hidden="true"></i>
         </h2>
         <hr class="divider">
-        <p class="ign">@jaypeeig</p>
+        <p class="ign"><span>BY JAYPEE IGNACIO </span>@jaypeeig</p>
       </div>
 
       <div class="ibadge">
-        <a href="#" rel="nofollow">
           <img src="img/gravatar.png" alt="jaypee">
-        </a>
       </div>
+
+      <div class="container blog-list">
+        <div class="row">
+           <div class="blog-item col-sm-8 offset-sm-2">
+            <div class="crop-top ct-fliphack">
+            <img src="http://gdurl.com/ifGa" class="img-fluid scale flip" alt="..">
+            </div>
+            <h4 class="blog-title">Mt. Purgatory Traverse (Benguet) | <span class="badge badge-success">Travel</span></h4>
+            <p class="blog-desc">
+             Nestled between two of the major Cordillera mountains – Mt. Pulag and Mt. Ugo – are the lesser-known but very beautiful peaks of Bokod, Benguet. In the past year, the municipality of Bokod with various hikers joined together to establish a trail going through these peaks, forming what is now called the ‘Mt. Purgatory Traverse’. This article is based on my hike up the mountain from December 28-29, 2012.
+            </p>
+            <a href="#">read more&hellip;</a>
+          </div>
+
+          <div class="blog-item col-sm-8 offset-sm-2">
+            <div class="crop-top">
+            <img src="http://gdurl.com/TEnG" class="img-fluid" alt="..">
+            </div> 
+            <h4 class="blog-title">Devcon on Talisayen Cove (Zambales) | <span class="badge badge-success">Travel</span></h4>
+            <p class="blog-desc">
+            Talisayin Cove is a beach destination only 3-4 hours away from Manila; a perfect substitute to the crowded beaches of Batangas. Compared to the more famous Zambales destinations like Anawangin Cove and Crystal Beach, Talisayin is quieter and less commercialized. According to a local of Talisayin, the cove has long been private, until recently where it was opened to the public. If you’re thinking of going to Anawangin Cove or Crystal beach on a weekend especially weekdays, try Talisayin, you’ll probably end up having the beach all to yourselves. (If not, definitely quieter than its counterparts)
+            </p>
+            <a href="site_url/api/talisayin-cove">read more&hellip;</a>
+          </div>
+
+          <div class="blog-pagination col-sm-8 offset-sm-2">
+          <nav>
+            <ul class="pagination pagination-sm justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="row">
+          <div class="col-sm-4 offset-sm-2">
+            <h5>Social Profile</h5>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/jaypeeig" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://github.com/jaypeeig" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i> Github
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/jaypeeig" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 footer">
+            <p class="text-center"><span class="site-name">jaypeeignacio.com</span><br> &copy; Copyright 2017</p>
+          </div>
+        </div>
+      </div>
+    
     </div>
 
   </body>
@@ -42,6 +113,14 @@
     window.onload = function() {
       $('#preloader').hide().siblings('#contents').css('visibility', 'visible');
     };
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71946859-2', 'auto');
+    ga('send', 'pageview');
 
   </script>
 
