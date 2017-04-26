@@ -3,7 +3,7 @@ var path 		= require('path');
 var bodyParser	= require('body-parser');
 
 var app = express();
-var port = 80;
+var port = process.env.PORT || 80;
 
 //route vars
 var index = require('./routes/index');
