@@ -34,7 +34,7 @@ p#preloader {
     min-height: 350px;
     margin: 0 auto 30px;
     padding: 10px 0;
-    background: url(../img/woelfel.png) bottom center no-repeat fixed;
+    background: url('http://gdurl.com/YLj2') bottom center no-repeat fixed;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.27) 0px 2px 4px;
     border-bottom: 8px solid #b4b3b3;
