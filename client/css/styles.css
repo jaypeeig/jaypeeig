@@ -34,7 +34,7 @@ p#preloader {
     min-height: 350px;
     margin: 0 auto 30px;
     padding: 10px 0;
-    background: url('http://gdurl.com/YLj2') bottom center no-repeat fixed;
+    background: url('https://res.cloudinary.com/gourmet-codelabs/image/upload/v1493815003/woelfel_f04g3b.png') bottom center no-repeat fixed;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.27) 0px 2px 4px;
     border-bottom: 8px solid #b4b3b3;
@@ -181,6 +181,18 @@ span.site-name {
 .footer {
     color: #959595;
     font-size: 12px;
+}
+
+/*RAWS*/
+
+#raws {
+    margin: 30px -2px 60px -2px;
+}
+
+#raws .col-sm-2 {
+    margin-bottom: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 @media(max-width: 767px) {
