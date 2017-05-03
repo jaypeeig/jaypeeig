@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
 
-app.get('/page2', function(req, res, next){
+app.get('/page-2', function(req, res, next){
 	res.render('index2.html');
 });
 
