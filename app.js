@@ -6,8 +6,8 @@ var app = express();
 var port = process.env.PORT || 8080;
 
 //route vars
-var index = require('./routes/index');
-var api = require('./routes/api');
+var index = require('./routes/index.js');
+var api = require('./routes/api.js');
 
 //view engine
 app.set('views', path.join(__dirname, 'views'));
