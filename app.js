@@ -7,6 +7,7 @@ var port = process.env.PORT || 8080;
 
 //route vars
 var index = require('./routes/index');
+var api = require('./routes/api');
 
 //view engine
 app.set('views', path.join(__dirname, 'views'));
@@ -21,6 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
+app.use('/api', api);
 
 app.listen(port, function(){
 	console.log('server started at port ' + port);
