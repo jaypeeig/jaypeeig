@@ -9,8 +9,7 @@ var port = process.env.PORT || 80;
 var index = require('./routes/index');
 
 //view engine
-app.set('views', express.static(path.join(__dirname, 'views')));
-
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
