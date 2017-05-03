@@ -21,14 +21,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
-app.use('/page2', function(req, res, next){
+
+app.get('/page2', function(req, res, next){
 	res.render('index2.html');
 });
 
-app.use('/api', function(req, res, next){
-	res.json({code: 'not authorized'});
-});
-app.use('/api/gdrive_bicol', function(req, res, next){
+app.get('/api/gdrive-bicol', function(req, res, next){
 	res.render('bicol.html');
 });
 
