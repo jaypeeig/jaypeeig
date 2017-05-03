@@ -26,7 +26,7 @@
 
     <div id="contents" style="visibility:hidden">
       <div class="header">
-        <h1>Gourmet <br class="hd-lg"> Codelabs</h1>
+        <h1>Gourmet <br class="hd-lg"> Shrimpblog</h1>
         <h2>code <i class="fa fa-code" aria-hidden="true"></i> &nbsp;&bull;&nbsp;
           travel <i class="fa fa-camera-retro" aria-hidden="true"></i>
         </h2>
@@ -40,6 +40,29 @@
 
       <div class="container blog-list">
         <div class="row">
+          
+          <div class="blog-item col-sm-8 offset-sm-2">
+            <div class="crop-top ct-fliphack">
+            <img src="http://gdurl.com/ejiA" class="img-fluid scale flip" alt="..">
+            </div>
+            <h4 class="blog-title">Backpacking on Region V (Bicol) | <span class="badge badge-success">Travel</span></h4>
+            <p class="blog-desc">
+             Bicol, located on the southeastern peninsula of Luzon, has been on the top of my list to travel in the Philippines. If I had more time (and money), I would love to visit every one of its six provinces. We spent our four days exploration of Bicol Peninsula crisscrossing between Tabaco, Malinao, Camalig and Legaspi … It was my first time to go to bicol and we stayed at my college classmate's relative house.
+            </p>
+            <a class="a-rmore" href="#">read more&hellip;</a>
+          </div> 
+
+           <div class="blog-item col-sm-8 offset-sm-2">
+            <div class="crop-top ct-fliphack">
+            <img src="http://gdurl.com/TCUr" class="img-fluid scale flip" alt="..">
+            </div>
+            <h4 class="blog-title">Mt. Pulag Ambangeg Trail (Benguet) | <span class="badge badge-success">Travel</span></h4>
+            <p class="blog-desc">
+             One of the foremost adventure destinations in Northern Luzon, Philippines - Mount Pulag is in many Filipino and international mountain climbers' must-do list or bucket list, if you will. Standing at 2922 meters above sea level (MASL), Mount Pulag is the highest peak in Luzon, the third highest in the Philippines. In any case, Mount Pulag is first-rate in giving the novice, the uninitiated, the newbie in mountaineering, hiking or trekking as much adventure and as much awe and wonder as the seasoned mountaineer.
+            </p>
+            <a class="a-rmore" href="#">read more&hellip;</a>
+          </div> 
+
            <div class="blog-item col-sm-8 offset-sm-2">
             <div class="crop-top ct-fliphack">
             <img src="http://gdurl.com/ifGa" class="img-fluid scale flip" alt="..">
@@ -48,7 +71,7 @@
             <p class="blog-desc">
              Nestled between two of the major Cordillera mountains – Mt. Pulag and Mt. Ugo – are the lesser-known but very beautiful peaks of Bokod, Benguet. In the past year, the municipality of Bokod with various hikers joined together to establish a trail going through these peaks, forming what is now called the ‘Mt. Purgatory Traverse’. This article is based on my hike up the mountain from December 28-29, 2012.
             </p>
-            <a href="#">read more&hellip;</a>
+            <a class="a-rmore" href="#">read more&hellip;</a>
           </div>
 
           <div class="blog-item col-sm-8 offset-sm-2">
@@ -59,20 +82,27 @@
             <p class="blog-desc">
             Talisayin Cove is a beach destination only 3-4 hours away from Manila; a perfect substitute to the crowded beaches of Batangas. Compared to the more famous Zambales destinations like Anawangin Cove and Crystal Beach, Talisayin is quieter and less commercialized. According to a local of Talisayin, the cove has long been private, until recently where it was opened to the public. If you’re thinking of going to Anawangin Cove or Crystal beach on a weekend especially weekdays, try Talisayin, you’ll probably end up having the beach all to yourselves. (If not, definitely quieter than its counterparts)
             </p>
-            <a href="site_url/api/talisayin-cove">read more&hellip;</a>
+            <a class="a-rmore" href="site_url/api/talisayin-cove">read more&hellip;</a>
           </div>
+
+          <div class="blog-item col-sm-8 offset-sm-2">
+            <div class="crop-top ct-fliphack">
+            <img src="http://gdurl.com/Ufws" class="img-fluid scale flip" alt="..">
+            </div>
+            <h4 class="blog-title">Hacking Arduino 101 (DIY) | <span class="badge badge-success">Microcontroller</span></h4>
+            <p class="blog-desc">
+             The Arduino platform has been long known as one of the best ways to get in to electronics and programming for beginners. In my opinion, they've seemed to do a good job of offering products that are simple yet effective for most projects that a beginner might undertake, all without having to know how Arduino works.
+            </p>
+            <a class="a-rmore" href="#">read more&hellip;</a>
+          </div> 
 
           <div class="blog-pagination col-sm-8 offset-sm-2">
           <nav>
             <ul class="pagination pagination-sm justify-content-end">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item disabled"><a class="page-link" href="/" tabindex="-1">1</a></li>
+              <li class="page-item"><a class="page-link" href="/page-2">2</a></li>
               <li class="page-item">
-                <a class="page-link" href="#">Next</a>
+                <a class="page-link" href="/page-2">Next</a>
               </li>
             </ul>
           </nav>
@@ -116,6 +146,12 @@
   </body>
 
   <script>
+    $(function(){
+      $('.a-rmore').click(function(e){
+        $(this).html('Content locked.');
+        return false;
+      });
+    });
 
     window.onload = function() {
       $('#preloader').hide().siblings('#contents').css('visibility', 'visible');

@@ -106,6 +106,11 @@ p.ign span {
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
 }
+.crop-top.ct-fliphack {
+    -webkit-box-shadow: 0px -4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 10px 0px rgba(0,0,0,0.75);
+}
 .crop-top img {
     display: block;
     width: 100%;
