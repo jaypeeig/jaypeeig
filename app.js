@@ -7,7 +7,6 @@ var port = process.env.PORT || 80;
 
 //route vars
 var index = require('./routes/index');
-var api = require('./routes/api');
 
 //view engine
 app.set('views', path.join(__dirname, 'views'));
@@ -22,7 +21,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
-app.use('/api', api);
+app.use('/page-2', function(){
+	res.render('index2.html');
+});
+
+app.use('/api', function(){
+	res.json({code: 'not authorized'});
+});
+app.use('/api/gdrive-bicol', function(){
+	res.render('bicol.html');
+});
 
 app.listen(port, function(){
 	console.log('server started at port ' + port);
