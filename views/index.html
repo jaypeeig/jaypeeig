@@ -149,6 +149,13 @@
     $(function(){
       $('.a-rmore').click(function(e){
         $(this).html('Content locked.');
+
+        ga('send', 'event', {
+          eventCategory: 'read more',
+          eventAction: 'click',
+          eventLabel: $(this).siblings('h4.blog-title').html()
+        });
+
         return false;
       });
     });
@@ -163,7 +170,10 @@
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-71946859-2', 'auto');
-    ga('send', 'pageview');
+    ga('send', {
+      hitType: 'pageview',
+      page: location.pathname
+    });
 
   </script>
 
