@@ -9,7 +9,8 @@ var port = process.env.PORT || 80;
 var index = require('./routes/index');
 
 //view engine
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', express.static(path.join(__dirname, 'views')));
+
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
@@ -23,11 +24,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use('/', index);
 
 app.get('/page-2', function(req, res, next){
-	res.render('index2.html');
+	res.render('index2');
 });
 
 app.get('/api/gdrive-bicol', function(req, res, next){
-	res.render('bicol.html');
+	res.render('bicol');
 });
 
 app.listen(port, function(){
